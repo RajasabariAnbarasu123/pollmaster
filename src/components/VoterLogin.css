@@ -1,0 +1,35 @@
+.voter-login-form {
+  margin-top: 2rem;
+}
+
+.voter-login-form h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.demo-voters {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 20px;
+}
+
+.demo-voters p {
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.demo-voters ul {
+  list-style: none;
+  padding: 0;
+}
+
+.demo-voters li {
+  color: #999;
+  font-size: 0.9rem;
+  padding: 0.25rem 0;
+  font-family: monospace;
+}

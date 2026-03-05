@@ -1,0 +1,175 @@
+.poll-list {
+  padding: 1rem;
+  max-height: calc(100vh - 280px);
+  overflow-y: auto;
+}
+
+.poll-section {
+  margin-bottom: 1.5rem;
+}
+
+.poll-section h5 {
+  color: #666;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.empty-polls {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #999;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.hint {
+  color: #667eea;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.poll-card {
+  position: relative;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 16px;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.poll-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.poll-card.active {
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+.poll-card.expired {
+  opacity: 0.8;
+  background: #f1f3f5;
+}
+
+.poll-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.poll-card-header h4 {
+  font-size: 1rem;
+  color: #333;
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+.badges {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.badge.voted {
+  background: #28a745;
+  color: white;
+}
+
+.badge.creator {
+  background: #ffd700;
+  color: #333;
+}
+
+.poll-card-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.poll-card-time {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.8rem;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.poll-card-time.expired {
+  color: #ff4757;
+}
+
+.winner-info {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: #856404;
+  border-left: 3px solid #ffd700;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(255, 71, 87, 0.1);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.poll-card:hover .delete-btn {
+  opacity: 1;
+}
+
+.delete-btn:hover {
+  background: #ff4757;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Scrollbar */
+.poll-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.poll-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.poll-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.poll-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
