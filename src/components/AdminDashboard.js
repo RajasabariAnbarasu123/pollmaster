@@ -13,6 +13,7 @@ const AdminDashboard = ({ onCreatePoll, onCreateVoter, onDeleteVoter, voters, po
       setNewVoter({ username: '', password: '', name: '' });
     }
   };
+ 
 
   return (
     <div className="admin-dashboard">

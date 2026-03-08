@@ -44,13 +44,13 @@ function App() {
     initializeData();
     const interval = setInterval(checkExpiredPolls, 60000);
     return () => clearInterval(interval);
-  }, []);
+  });
 
   useEffect(() => {
     if (polls.length > 0 || voters.length > 0) {
       saveData();
     }
-  }, [polls, voters]);
+  });
 
   const initializeDefaultData = () => {
     // Create default admin

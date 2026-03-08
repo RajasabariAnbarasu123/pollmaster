@@ -1,6 +1,7 @@
 import React from 'react';
 import './VotingEngine.css';
 
+
 const VotingEngine = ({ poll, onVote, hasVoted, userVote, onViewResults, currentUser }) => {
   if (hasVoted) {
     return (
